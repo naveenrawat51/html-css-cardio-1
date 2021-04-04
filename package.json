@@ -1,0 +1,24 @@
+{
+  "name": "html-css-cardio-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naveenrawat51/html-css-cardio-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naveenrawat51/html-css-cardio-1/issues"
+  },
+  "homepage": "https://github.com/naveenrawat51/html-css-cardio-1#readme",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^5.0.0"
+  }
+}

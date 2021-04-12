@@ -11,10 +11,9 @@
         margin: .5rem;
         background-image: linear-gradient(to right, #7ed56f, #28b485);
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
     }
-
-    &__text {}
 
     &:hover {
         transform: translateY(-1.5rem) scaleX(1.03);

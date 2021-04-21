@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- header starts-->
-    <header class="header">
+    <header class="header" style="display: none">
       <div class="header__logo-box">
         <img src="./images/logo-white.png" alt="logo" class="header__logo" />
       </div>
@@ -30,7 +30,7 @@
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" style="display: none">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Exciting tours for adventurous people
@@ -81,7 +81,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" style="display: none">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -133,7 +133,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" style="display: none">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -238,11 +238,11 @@
       </section>
 
       <!-- stories -->
-      <section class="section-stories">
+      <section class="section-stories" style="display: none">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
-            <source src="images/video.mp4" type="video/mp4">
-            <source src="image/video.webm" type="video/webm">
+            <source src="images/video.mp4" type="video/mp4" />
+            <source src="image/video.webm" type="video/webm" />
             Your browser is not supported!
           </video>
         </div>
@@ -253,16 +253,22 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="images/nat-8.jpg" alt="person on a tour" class="story__img" />
+              <img
+                src="images/nat-8.jpg"
+                alt="person on a tour"
+                class="story__img"
+              />
               <figcaption class="story__caption">Marry Smith</figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                I had the best week ever with my family
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet adipisicing elit. Natus molestias
                 neque ipsa atque ad similique, blanditiis eius sapiente eaque
-                excepturi neque ipsa atque ad similiqa, blanditiis eius sapiente eaque
-                excepturi
+                excepturi neque ipsa atque ad similiqa, blanditiis eius sapiente
+                eaque excepturi
               </p>
             </div>
           </div>
@@ -271,16 +277,22 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="images/nat-9.jpg" alt="person on a tour" class="story__img" />
+              <img
+                src="images/nat-9.jpg"
+                alt="person on a tour"
+                class="story__img"
+              />
               <figcaption class="story__caption">Jacky Smith</figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                I had the best week ever with my family
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet adipisicing elit. Natus molestias
                 neque ipsa atque ad similique, blanditiis eius sapiente eaque
-                excepturi neque ipsa atque ad similiqa, blanditiis eius sapiente eaque
-                excepturi
+                excepturi neque ipsa atque ad similiqa, blanditiis eius sapiente
+                eaque excepturi
               </p>
             </div>
           </div>
@@ -288,6 +300,72 @@
 
         <div class="u-center-text u-margin-top-big">
           <a href="#" class="btn-text">Discover all tours</a>
+        </div>
+      </section>
+
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Start Booking Now</h2>
+                </div>
+                <div class="form__group">
+                  <input
+                    id="name"
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    id="email"
+                    type="email"
+                    class="form__input"
+                    placeholder="Email Address"
+                    required
+                  />
+                  <label for="email" class="form__label">Email</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small tour group</label
+                    >
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      large tour group</label
+                    >
+                  </div>
+                </div>
+                <div class="form__group">
+                  <button class="btn btn--green">Next Step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>

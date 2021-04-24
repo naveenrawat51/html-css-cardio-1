@@ -15,9 +15,8 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
   <body>
-
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
@@ -25,11 +24,21 @@
       <div class="navigation__background">&nbsp;</div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">About Natous</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About Natous</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Your benefits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Popular tours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Book now</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -152,7 +161,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -183,7 +192,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -214,7 +223,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -245,7 +254,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$697</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -430,6 +439,43 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="images/nat-8.jpg" alt="tour photo" class="popup__img" />
+          <img src="images/nat-9.jpg" alt="tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start bokking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+            fugiat iusto fuga praesentium optio, eaque rerum! Provident
+            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
+            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
+            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
+            error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias
+            eos sapiente officiis modi at sunt excepturi expedita sint? Sed
+            quibusdam recusandae alias error harum maxime adipisci amet laborum.
+            Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates
+            a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius
+            fugit doloribus tenetur fugiat, temporibus enim commodi iusto libero
+            magni deleniti quod quam consequuntur! Commodi minima excepturi
+            repudiandae velit hic maxime
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
     <!-- <section class="grid-test">
       <div class="row">
         <div class="col-1-of-2">Col 1 of 2</div>
